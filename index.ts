@@ -32,7 +32,7 @@ export class FancyOut {
    * @return void
    */
   static warn(message: string) {
-    console.log("\x1b[33;1m%s\x1b[0m", message);
+    console.warn("\x1b[33;1m%s\x1b[0m", message);
   }
 
   /**
@@ -50,6 +50,6 @@ export class FancyOut {
    * @return void
    */
   static error(message: string) {
-    console.log("\x1b[31;1m%s\x1b[0m", message);
+    console.error("\x1b[31;1m%s\x1b[0m", message);
   }
 }
