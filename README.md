@@ -1,15 +1,5 @@
-# fancy-out
+# Fancy Out
 
-To install dependencies:
+Fancy out is a very simple package. It simply provides a wrapper around console.log to output diffrent colored text for various purposes.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+If you want to know more, just read the very short source code at `index.ts`.
