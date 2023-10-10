@@ -1,5 +1,5 @@
 {
-  "name": "fancy-out",
+  "name": "@pwrtool/fancy-out",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
