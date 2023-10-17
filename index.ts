@@ -14,16 +14,17 @@ export class FancyOut {
    * @return void
    */
   static success(message: string) {
-    console.log("\x1b[32;1m%s\x1b[0m", message);
+    console.log("\x1b[32m%s\x1b[0m", message);
   }
 
   /**
-   * Outputs a message to the console in blue and bold text
+   * Outputs a message to the console in bold text
+   * Does not work on some terminals
    * @param message - The message to output
    * @return void
    */
   static bold(message: string) {
-    console.log("\x1b[37;1m%s\x1b[0m", message);
+    console.log("\x1b[1;3m%s\x1b[0m", message);
   }
 
   /**
@@ -32,7 +33,7 @@ export class FancyOut {
    * @return void
    */
   static warn(message: string) {
-    console.warn("\x1b[33;1m%s\x1b[0m", message);
+    console.log("\x1b[33m%s\x1b[0m", message);
   }
 
   /**
@@ -41,7 +42,7 @@ export class FancyOut {
    * @return void
    */
   static header(message: string) {
-    console.log("\x1b[34;1;4m%s\x1b[0m", message);
+    console.log("\x1b[34;4m%s\x1b[0m", message);
   }
 
   /**
@@ -50,6 +51,24 @@ export class FancyOut {
    * @return void
    */
   static error(message: string) {
-    console.error("\x1b[31;1m%s\x1b[0m", message);
+    console.log("\x1b[31m%s\x1b[0m", message);
+  }
+
+  /**
+   * Outputs a message to the console in cyan text
+   * @param message - The message to output
+   * @return void
+   */
+  static info(message: string) {
+    console.log("\x1b[36m%s\x1b[0m", message);
+  }
+
+  /**
+   * Outputs a message to the console in underlined text
+   * @param message - The message to output
+   * @return void
+   */
+  static underlined(message: string) {
+    console.log("\x1b[4m%s\x1b[0m", message);
   }
 }
